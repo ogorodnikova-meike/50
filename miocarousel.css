@@ -1,0 +1,381 @@
+/**
+ * Padding is set relative to the width
+ * of the element, so here padding-top:60% is
+ * a percentage of the width. This allows us
+ * to set the height as a ratio of the width
+ *
+ */
+.miocarousel {
+	width: 100%;
+	position: relative;
+}
+
+.miocarousel-inner {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+/**
+ * ==========================
+ * Animation styles
+ *
+ * Notes:
+ * 1. We use z-index to position active slides in-front
+ * of non-active slides
+ * 2. We set right:0 and left:0 on .slide to provide us with
+ * a default positioning on both sides of the slide. This allows
+ * us to trigger JS and CSS3 animations easily
+ *
+ */
+.miocarousel .slide {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	margin-bottom: 0;
+}
+
+.miocarousel .slide.active,
+.miocarousel .slide.left,
+.miocarousel .slide.right {
+	z-index: 2;
+	opacity: 1;
+}
+
+/**
+ * ANIMATIONS ==========================
+ */
+
+.miocarousel.transition .slide {
+	transition-property: right, left, margin, opacity;
+}
+
+
+/* fade */
+.miocarousel_fade .slide.right,
+.miocarousel_fade .slide.left {
+	opacity: 0;
+}
+
+.miocarousel_fade.transition .slide.left {
+	opacity: 1;
+}
+
+.miocarousel_fade.transition .slide.right {
+	opacity: 1;
+}
+
+.miocarousel_fade.transition .slide.shift-right,
+.miocarousel_fade.transition .slide.shift-left {
+	opacity: 0
+}
+
+/* slide */
+.miocarousel_slide .js-reset-left {
+	left: auto
+}
+
+.miocarousel_slide .slide.left {
+	left: -100%;
+	right: 0;
+}
+
+.miocarousel_slide .slide.right {
+	right: -100%;
+	left: auto;
+}
+
+.miocarousel_slide.transition .slide.left {
+	left: 0%
+}
+
+.miocarousel_slide.transition .slide.right {
+	right: 0%
+}
+
+.miocarousel_slide.transition .slide.shift-right {
+	right: 100%;
+	left: auto
+}
+
+.miocarousel_slide.transition .slide.shift-left {
+	left: 100%;
+	right: auto
+}
+
+
+/**
+ * ==========================
+ * Indicators
+ *
+ */
+.miocarousel .indicators {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 4;
+	padding: 0 !important;
+	text-align: center;
+}
+
+.miocarousel .indicators li {
+	width: 9px;
+	height: 9px;
+	display: inline-block;
+	margin: 4px;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	list-style-type: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 !important;
+}
+
+.miocarousel .indicators li.active {
+	background: rgba(0, 0, 0, 0.3);
+	border-color: rgba(0, 0, 0, 0);
+}
+
+.miocarousel .indicators li:hover {
+	background: rgba(0, 0, 0, 0.2);
+	border-color: rgba(0, 0, 0, 0);
+}
+
+
+/**
+ * ==========================
+ * Arrows
+ *
+ */
+.miocarousel .mc_arrow_container {
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	margin-top: -55px;
+	height: 70px;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.miocarousel .mc_arrow_container span {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 50%;
+	border-top: 2px solid rgba(0, 0, 0, 0.2);
+	border-right: 2px solid rgba(0, 0, 0, 0.2);
+	transition: border-color 0.3s ease-out;
+	display: none;
+}
+
+.miocarousel:hover .mc_arrow_container span,
+.mc_arrow_container:hover span {
+	display: block;
+}
+
+.miocarousel .mc_arrow_container:hover span {
+	border-color: rgba(0, 0, 0, 0.5)
+}
+
+.miocarousel .mc_arrow_container-left {
+	left: -40px;
+}
+
+.miocarousel .mc_arrow_container-left span {
+	transform: rotate(225deg);
+	left: 10px;
+}
+
+.miocarousel .mc_arrow_container-right {
+	right: -40px;
+}
+
+.miocarousel .mc_arrow_container-right span {
+	transform: rotate(45deg);
+	right: 10px;
+}
+
+/* Light version
+******************************** */
+
+.miocarousel_light .indicators li,
+.dark_color .miocarousel_auto .indicators li {
+	border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.miocarousel_light .indicators li.active,
+.dark_color .miocarousel_auto .indicators li.active,
+.miocarousel_light .indicators li:hover,
+.dark_color .miocarousel_auto .indicators li:hover {
+	background: rgba(255, 255, 255, 0.5);
+	border-color: rgba(255, 255, 255, 0);
+}
+
+.miocarousel_light .mc_arrow_container span,
+.dark_color .miocarousel_auto .mc_arrow_container span {
+	border-top: 3px solid rgba(255, 255, 255, 0.2);
+	border-right: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.miocarousel_light .mc_arrow_container:hover span,
+.dark_color .miocarousel_auto .mc_arrow_container:hover span {
+	border-color: rgba(255, 255, 255, 0.5)
+}
+
+/* Style 1
+******************************** */
+
+.miocarousel_style_1 {
+	padding-bottom: 40px;
+}
+
+.miocarousel_style_1 .mc_arrow_container span {
+	margin-top: -13px;
+}
+
+/* Style 2 - small - used in eshop gallery
+******************************** */
+
+.miocarousel_style_2 {
+	padding-bottom: 0;
+}
+
+.miocarousel_style_2 .mc_arrow_container span {
+	margin-top: -6px;
+}
+
+/* Style 3 - small - used in row slider
+******************************** */
+
+.miocarousel_style_3 {
+	padding-bottom: 0;
+}
+
+.miocarousel_style_3 .mc_arrow_container span {
+	margin-top: -13px;
+}
+
+.miocarousel_style_3 .mc_arrow_container-left {
+	left: 20px;
+}
+
+.miocarousel_style_3 .mc_arrow_container-right {
+	right: 20px;
+}
+
+/* Background
+******************************** */
+
+.miocarousel_background {
+	width: 100%;
+	height: 100% !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.row .miocarousel_background {
+	z-index: 0;
+}
+
+.miocarousel_background .slide {
+	width: 100%;
+	height: 100% !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#miocarousel_page_background {
+	z-index: -5;
+}
+
+#miocarousel_page_background,
+#miocarousel_page_background .slide {
+	position: fixed;
+}
+
+.miocarousel_hide_nav {
+	padding-bottom: 0;
+}
+
+.miocarousel_hide_nav .indicators {
+	display: none;
+}
+
+.miocarousel_hide_nav .mc_arrow_container {
+	margin-top: -35px;
+}
+
+/* Mobile devices
+******************************** */
+
+@media screen and (max-width: 990px) {
+
+	.miocarousel .mc_arrow_container span {
+		display: block;
+	}
+
+	.miocarousel .mc_arrow_container-left {
+		left: 0px;
+	}
+
+	.miocarousel .mc_arrow_container-right {
+		right: 0px;
+	}
+
+	/* testimonials */
+	.testimonials_element_container .miocarousel-inner {
+		max-width: 70%;
+	}
+
+	/* element items */
+	.mw_element_items.miocarousel_style_1 {
+		padding-bottom: 70px;
+	}
+
+	.mw_element_items.miocarousel .mc_arrow_container {
+		top: auto;
+		bottom: -10px;
+		margin-top: 0;
+		height: 50px;
+	}
+
+	.mw_element_items.miocarousel .mc_arrow_container span {
+		width: 20px;
+		height: 20px;
+	}
+
+	/* gallery */
+	.image_gallery_element.miocarousel .mc_arrow_container {
+		background: rgba(0, 0, 0, 0.2);
+	}
+
+	.image_gallery_element.miocarousel .mc_arrow_container span {
+		border-top: 2px solid rgba(255, 255, 255, 0.5);
+		border-right: 2px solid rgba(255, 255, 255, 0.5);
+	}
+
+	.image_gallery_element.miocarousel .mc_arrow_container:hover span {
+		border-top: 2px solid rgba(255, 255, 255, 1);
+		border-right: 2px solid rgba(255, 255, 255, 1);
+	}
+
+	.image_gallery_element.miocarousel .mc_arrow_container-left span {
+		left: 20px;
+	}
+
+	.image_gallery_element.miocarousel .mc_arrow_container-right span {
+		right: 20px;
+	}
+
+}

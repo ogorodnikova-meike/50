@@ -1,0 +1,872 @@
+.member_section_page .ve-header-type1 .header_nav_container {
+	padding-right: 60px;
+}
+
+.member_section_page .ve-header-type1 #mobile_nav {
+	margin-right: 50px;
+}
+
+#profile_but {
+	background: #000;
+	float: right;
+	height: 36px;
+	width: 37px;
+	margin-left: 20px;
+}
+
+#member_user_avatar {
+	padding: 3px;
+	width: 30px;
+	height: 30px;
+	background: #000;
+	line-height: 0;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -18px;
+	z-index: 11;
+}
+
+#member_user_menu {
+	padding: 8px 10px;
+	width: 220px;
+	background: #000;
+	font-size: 13px;
+	line-height: 1.4em;
+	position: absolute;
+	right: -4px;
+	top: -4px;
+	color: #e1e1e1;
+	z-index: 4;
+}
+
+.member_user_menu_close #member_user_menu {
+	display: none;
+}
+
+.member_user_menu_open img {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 5;
+}
+
+#member_user_menu .member_user_name {
+	font-size: 13px;
+	padding: 6px 40px 12px 8px;
+	border-bottom: 1px solid #242424;
+}
+
+#member_user_menu a {
+	color: #9c9c9c;
+	text-decoration: none;
+	display: block;
+}
+
+#member_user_menu a:hover {
+	color: #e1e1e1;
+}
+
+#member_user_menu .member_user_sections {
+	padding: 16px 8px 0;
+	border-top: 1px solid #242424;
+}
+
+#member_user_menu ul {
+	padding: 12px 8px;
+}
+
+#member_user_menu ul li {
+	padding: 4px 0;
+}
+
+#member_user_menu .member_time_limited {
+	padding: 8px;
+	border-top: 1px solid #242424;
+	color: #9c9c9c;
+	text-align: left;
+}
+
+#member_user_menu .member_time_limited small {
+	font-size: 10px;
+	display: inline-block;
+	padding-top: 3px;
+}
+
+#member_user_menu .member_time_limited a {
+	color: #fff;
+	background: #ca002b;
+	display: inline-block;
+	float: right;
+	font-size: 10px;
+	font-weight: 400;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#member_user_menu .member_time_limited a:hover {
+	background: #a90024;
+}
+
+/* profile edit */
+#member_profile {
+	position: absolute;
+	width: 600px;
+	background: #fff;
+	padding: 20px 40px 40px;
+	top: 20px;
+	margin-left: -300px;
+	left: 50%;
+	z-index: 999;
+	font-size: 14px;
+	line-height: 22px;
+	display: none;
+}
+
+#member_profile_background {
+	opacity: 0.8;
+	background-color: #000000;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	display: none;
+}
+
+#member_profile h2 {
+	padding: 20px 0 15px;
+	font-size: 20px;
+}
+
+.member_profile_row {
+	padding-bottom: 10px;
+}
+
+.member_profile_row label, .member_profile_row .label {
+	display: block;
+	font-size: 13px;
+	color: #888;
+	padding-bottom: 4px;
+	padding-left: 2px;
+}
+
+.member_profile_row input.text,
+.member_profile_row .noinput,
+.member_profile_row textarea {
+	background: #ededed;
+	padding: 12px;
+	border: 0;
+	width: 100%;
+	font-size: 15px;
+	color: #333;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.member_profile_row .noinput {
+	color: #888;
+	display: block;
+	cursor: default;
+}
+
+.member_profile_row .description {
+	color: #aaa;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.member_profile_button_row {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.member_profile_avatar_row img {
+	float: left;
+	margin-right: 15px;
+}
+
+.member_profile_avatar_row small {
+	font-size: 11px;
+	line-height: 14px;
+	color: #888;
+	display: block;
+}
+
+.member_profile_button {
+	border: 0;
+	color: #fff;
+	background: #222;
+	padding: 12px 26px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.member_profile_button:hover {
+	background: #000;
+}
+
+#member_close_profile {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	background: url("") no-repeat 0 0;
+	text-indent: -999px;
+}
+
+/* Member pages element
+**************************************************************************** */
+.mw_member_lessons .mw_element_item_image_hover_content,
+.mw_member_month_lessons .mw_element_item_image_hover_content {
+	width: 100%;
+}
+
+.mw_member_item_noacess_info {
+	display: none;
+	font-size: 13px;
+}
+
+.mw_member_item_noacess_info p {
+	display: block;
+}
+
+.mw_member_noacess_but {
+	background: #fff;
+	font-size: 13px;
+	height: 29px;
+	line-height: 29px;
+	color: #111 !important;
+	padding: 0 12px 0 30px;
+	display: inline-block;
+	position: relative;
+	margin-top: 10px;
+	text-decoration: none;
+	-moz-border-radius: 29px;
+	-webkit-border-radius: 29px;
+	-khtml-border-radius: 29px;
+	border-radius: 29px;
+}
+
+.mw_member_noacess_but svg {
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	fill: #111;
+}
+
+.mw_member_pages_list_info_text {
+	display: none;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: normal;
+}
+
+.mw_member_noaccess_info_icon {
+	width: 50%;
+	height: 50%;
+	max-width: 60px;
+	max-height: 60px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	margin: 10px auto;
+	-moz-border-radius: 180px;
+	-webkit-border-radius: 180px;
+	-khtml-border-radius: 180px;
+	border-radius: 180px;
+}
+
+.mw_member_noaccess_info_icon i {
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+	display: block;
+	height: 0;
+}
+
+.mw_member_noaccess_info_icon svg {
+	width: 50%;
+	height: 50%;
+	fill: rgba(255, 255, 255, 0.4);
+	position: absolute;
+	top: 25%;
+	left: 25%;
+}
+
+.mw_member_item_noaccess:hover .mw_element_item_image_hover h3,
+.mw_member_item_noaccess:hover .mw_member_noaccess_info_icon,
+.mw_member_item_noaccess:hover .mw_element_item_image_hover .mw_element_item_subtitle,
+.mw_element_items_style_5 .mw_member_item_noaccess:hover .mw_element_item_title {
+	display: none;
+}
+
+.mw_element_item:hover .mw_member_item_noacess_info {
+	display: block;
+}
+
+/* progress */
+.mw_member_page_item_progress_container {
+	height: 5px;
+	background: rgba(0, 0, 0, 0.2);
+	position: relative;
+	margin-top: -5px;
+	z-index: 2;
+}
+
+.mw_element_item_content .mw_member_page_item_progress_container {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-top: 0;
+	left: 0;
+}
+
+.mw_member_page_item_progress {
+	height: 5px;
+}
+
+.mw_member_page_item_progress_finished {
+	width: 11px;
+	height: 11px;
+	padding: 5px;
+	position: absolute;
+	top: -8px;
+	right: -2px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	line-height: 0;
+}
+
+.mw_member_page_item_progress_finished svg {
+	fill: #fff;
+	width: 11px;
+	height: 11px;
+}
+
+/* archive */
+
+.mw_element_months_nav {
+	background: #fff;
+	padding: 17px 25px;
+	margin-bottom: 4%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 15px;
+	color: #111;
+}
+
+.mw_element_months_nav span {
+	display: inline-block;
+	padding: 8px 8px 8px 0;
+}
+
+.mw_element_months_nav select {
+	padding: 8px;
+	border: 1px solid #eee;
+	font-size: 15px;
+}
+
+/* Member login
+**************************************************************************** */
+.member_login_form {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+}
+
+.member_login_form_button_row button,
+.member_login_form_button_row a {
+	width: 100%;
+	margin-top: 2px;
+}
+
+.member_login_form_forgot {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.member_login_form_forgot a {
+	color: inherit !important;
+}
+
+.member_login_form_logged_box {
+	text-align: center;
+}
+
+.member_login_form_logged_box p {
+	padding-bottom: 1em;
+}
+
+
+/* Member checklist
+**************************************************************************** */
+.el_mem_checklist .mw_el_mem_checklist_title {
+	padding-bottom: 1.2em;
+	font-size: 18px;
+}
+
+.el_mem_checklist li {
+	position: relative;
+	cursor: pointer;
+}
+
+.el_mem_checklist li input {
+	position: absolute;
+	left: -100px;
+	top: -100px;
+}
+
+.el_mem_checklist .label {
+	cursor: pointer;
+	padding-bottom: 0.8em;
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 1.6em;
+}
+
+.mem_checklist_checkbox {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 1em;
+	height: 1em;
+	padding: 0.6em;
+	color: rgba(0, 0, 0, 0.3);
+	line-height: 0;
+	margin-right: 0.8em;
+	flex-shrink: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.mem_checklist_checkbox_text {
+	padding-top: 0.3em;
+}
+
+.row_text_auto.dark_color .mem_checklist_checkbox,
+.row_text_invers .mem_checklist_checkbox {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.text_auto.light_color .mem_checklist_checkbox,
+.ve_content_block.text_default .mem_checklist_checkbox {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.mem_checklist_checkbox svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.mem_checklist_checkbox path {
+	fill: currentColor;
+}
+
+.mem_checklist_checkbox_icon,
+.mem_checklist_checkbox_checked .mem_checklist_checkbox_none_icon,
+li:hover .mem_checklist_checkbox_none_icon {
+	display: none;
+}
+
+.mem_checklist_checkbox_checked {
+	border-color: transparent;
+
+}
+
+.mem_checklist_checkbox_checked .mem_checklist_checkbox_icon {
+	color: #fff;
+}
+
+.mem_checklist_checkbox_checked .mem_checklist_checkbox_icon,
+li:hover .mem_checklist_checkbox_icon {
+	display: block;
+}
+
+/* Member news
+**************************************************************************** */
+.mw_member_news_list .mw_element_row {
+	margin-bottom: 40px;
+}
+
+.mw_member_news_list .member_new_text {
+	display: none;
+}
+
+
+/* Member users
+**************************************************************************** */
+
+.mem_member_list_head {
+	padding: 20px 0 70px;
+}
+
+.mem_member_list_head .mem_member_list_title {
+	font-size: 33px;
+	float: left;
+	line-height: 1.4em;
+}
+
+.mem_member_list_head form {
+	float: right;
+}
+
+.mem_member_list_head .mem_search_member_input {
+	height: 37px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-right: 0;
+	width: 200px;
+	padding: 0 10px;
+	font-size: 13px;
+	float: left;
+}
+
+.mem_member_list_head .mem_search_member_but {
+	height: 39px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-left: 0;
+	width: 37px;
+	float: left;
+	line-height: 0;
+}
+
+.mem_member_list_head .mem_search_member_but svg {
+	height: 20px;
+	width: 20px;
+	fill: #888;
+}
+
+.mem_member_list_head .mem_search_member_but:hover svg {
+	fill: #111;
+}
+
+.mem_member_list_head .mem_search_member_cancel {
+	height: 27px;
+	background: #c92222;
+	width: 37px;
+	padding-top: 10px;
+	text-align: center;
+	float: left;
+	margin-left: 4px;
+	line-height: 0;
+	display: block;
+}
+
+.mem_member_list_head .mem_search_member_cancel:hover {
+	background: #a70c0c;
+}
+
+.mem_member_list_head .mem_search_member_cancel svg {
+	height: 17px;
+	width: 17px;
+}
+
+.mem_member_list_head .mem_search_member_cancel path {
+	fill: #fff;
+}
+
+
+/* Member users items */
+.mw_member_users_list .mw_element_item_image_hover_content {
+	line-height: 0;
+}
+
+.mw_member_users_list .mw_element_item_image_hover_content span {
+	display: block;
+	font-size: 13px;
+	padding-top: 10px;
+	line-height: 18px;
+}
+
+.mw_member_users_list .mw_element_item_image_hover_content svg {
+	width: 40px;
+	height: 40px;
+	color: #fff;
+}
+
+.mw_member_users_list_style_2 .mw_element_item_image_container {
+	max-width: 150px;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.mw_member_users_list_style_4 .mw_element_item_image_container {
+	max-width: 150px;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.mw_member_users_list_style_1 .responsive_image,
+.mw_member_users_list_style_2 .responsive_image,
+.mw_member_users_list_style_4 .responsive_image {
+	-moz-border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-khtml-border-radius: 500px;
+	border-radius: 500px;
+}
+
+.mw_member_users_list_style_2 .mw_element_item_content {
+	padding: 0 8%;
+}
+
+.mw_member_users_list_style_1 .mw_element_item_image_container {
+	max-width: 180px;
+	margin: 0 auto;
+}
+
+.mw_member_users_list_style_1 .mw_element_item_content {
+	width: 100%;
+}
+
+.mw_member_users_list_style_1 .mw_element_item {
+	align-items: center;
+}
+
+.mw_member_users_list_style_4 .mem_member_list_head {
+	padding: 20px 0 40px;
+}
+
+.mw_member_users_list .mw_social_icons_container {
+	margin-top: 1em;
+}
+
+.mw_member_users_list .mw_social_icon_bg svg,
+.mem_member_list_detail .mw_social_icon_bg svg {
+	width: 14px;
+	height: 14px;
+	fill: currentColor !important;
+	border-color: currentColor;
+}
+
+.mw_member_users_list .mw_social_icon_bg:hover,
+.mem_member_list_detail .mw_social_icon_bg:hover {
+	background-color: currentColor;
+}
+
+.mw_member_users_list .mw_social_icon_bg,
+.mem_member_list_detail .mw_social_icon_bg {
+	width: 14px;
+	height: 14px;
+	font-size: 14px;
+	padding: 0.3em;
+	margin-right: 5px;
+}
+
+.mw_member_users_list .mw_social_icon_bg:hover svg,
+.mem_member_list_detail .mw_social_icon_bg:hover svg {
+	fill: #fff !important;
+}
+
+.mw_member_users_list .light_hover_color .mw_social_icon_bg:hover svg,
+.mem_member_list_detail .light_hover_color .mw_social_icon_bg:hover svg {
+	fill: #111 !important;
+}
+
+
+/* Member users detail */
+
+.mem_member_list_detail {
+	padding: 60px;
+	color: #333;
+	font-size: 15px;
+}
+
+.mem_member_list_detail .mem_mld_head {
+	position: relative;
+	padding-left: 150px;
+	min-height: 120px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+
+.mem_member_list_detail img.mem_mld_image {
+	-moz-border-radius: 180px;
+	-webkit-border-radius: 180px;
+	-khtml-border-radius: 180px;
+	border-radius: 180px;
+	width: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mem_member_list_detail .mem_mld_name {
+	font-size: 25px;
+	color: #111;
+	line-height: 1.1em;
+}
+
+.mem_member_list_detail .mem_member_list_domain {
+	display: block;
+	color: #888;
+	font-size: 14px;
+}
+
+.mem_member_list_detail .mem_member_list_contacts {
+	margin-top: 10px;
+}
+
+.mem_member_list_detail .mw_social_icons_container {
+	margin-top: 16px;
+}
+
+.mem_member_list_detail .mem_mld_text {
+	margin-top: 40px;
+}
+
+.mem_member_list_detail .mem_mld_label {
+	font-size: 17px;
+	padding-bottom: 0.5em;
+	padding-top: 1em;
+	color: #111;
+	font-weight: bold;
+}
+
+.mem_member_list_detail p {
+	padding-bottom: 1em;
+}
+
+.mem_member_list_empty {
+	padding: 60px 0;
+	text-align: center;
+	font-size: 15px;
+	color: #888;
+}
+
+.el_mem_member_list ul.page-numbers {
+	padding: 70px 0 50px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Member registration
+**************************************************************************** */
+.mw_member_register_form {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+}
+
+.member_regform_element_container .mw_field_gdpr_accept {
+	padding-bottom: 8px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+/* Member section list
+**************************************************************************** */
+.mw_member_section_list .mw_element_item_image_hover_content {
+	width: 100%;
+}
+
+.mw_member_section_list_popup {
+	padding: 50px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 1.6em;
+	color: #111;
+}
+
+.mw_member_section_list_popup small {
+	color: #888;
+	font-size: 13px;
+}
+
+.mw_member_section_list_popup .title_element_container {
+	font-size: 35px;
+	padding: 5px 0 30px;
+}
+
+.mw_member_section_list_popup p {
+	padding-bottom: 50px;
+}
+
+.mw_member_section_list .mw_member_noaccess_info_icon {
+	max-width: 40px;
+	max-height: 40px;
+}
+
+/* Mobile phones
+******************************************************************* */
+@media screen and (max-width: 969px) {
+
+	.mw_member_users_list .mw_element_item_image_hover svg {
+		display: none;
+	}
+
+	.mw_member_users_list .mw_element_item_image_hover {
+		background: transparent !important;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	/* member users list */
+	.mem_member_list_head {
+		text-align: center;
+	}
+
+	.mem_member_list_head .mem_member_list_title {
+		float: none;
+		padding-bottom: 0.5em;
+	}
+
+	.mem_member_list_head form {
+		float: none;
+		display: inline-block;
+	}
+
+	.mw_member_users_list_style_1 .mw_element_item {
+		text-align: center;
+	}
+
+	.mem_member_list_detail {
+		padding: 40px;
+	}
+
+	.mem_member_list_detail .mem_mld_head {
+		padding: 0;
+		display: block;
+	}
+
+	.mem_member_list_detail img.mem_mld_image {
+		position: relative;
+		margin-bottom: 10px;
+	}
+
+	#member_profile {
+		width: auto;
+		top: 0px;
+		margin-left: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
+
+}
